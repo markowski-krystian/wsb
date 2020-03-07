@@ -9,7 +9,24 @@
 
     <body>
         <?php
-            echo "test";
+        $name = "Krystian";
+        $surname = "Markowski";
+
+
+            echo "$name $surname <br>";
+            echo '$name $surname <br>';
+            echo $name." ".$surname. "<hr>";
+            
+            //heredoc
+
+            echo <<<SHOW
+                <hr>
+                Imię: $name <br>
+                Nazwisko: $surname <br>
+                <hr>
+SHOW;
+
+
         ?>
     </body>
 
